@@ -43,3 +43,17 @@
   background-color: #f8f8f8;
   cursor: pointer;
 }
+.clicked {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ad2ba6;
+}
+.unclicked {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  cursor: pointer;
+  background-color: #ad2b2b;
+}

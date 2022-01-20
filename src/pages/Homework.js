@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Layout from '../components/shared/Layout';
+
 
 function Homework(){
 
@@ -10,10 +12,10 @@ function Homework(){
   }
 
     return (
-      <div>
+      <Layout activeMenu="homework">
         <button onClick={onClickHide}>번역하기</button>
         {value===true ? <div>안녕하세요</div>: <div>Hi~Hello!</div>}
-      </div>
+      </Layout>
     );
 }
 
