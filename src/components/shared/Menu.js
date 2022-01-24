@@ -11,16 +11,20 @@ function Menu({activeMenu}) {
     return (
         <div className={styles.menu}>
                 <Link to="/" className={activeMenu === 'home' ? styles.focused:styles.link}>
-                    <TiHome className={styles.icon}></TiHome>홈
+                    <TiHome className={styles.icon}></TiHome>
+                    <div className={styles.text}>홈</div>
                 </Link>
                 <Link to="/explore" className={activeMenu === 'explore' ? styles.focused:styles.link}>
-                    <FaRegCompass className={styles.icon}></FaRegCompass>탐색
+                    <FaRegCompass className={styles.icon}></FaRegCompass>
+                    <div className={styles.text}>탐색</div>
                 </Link>
                 <Link to="/subscription" className={activeMenu === 'subscription' ? styles.focused:styles.link}>
-                    <MdSubscriptions className={styles.icon}> </MdSubscriptions>구독
+                    <MdSubscriptions className={styles.icon}> </MdSubscriptions>
+                    <div className={styles.text}>구독</div>
                 </Link>
                 <Link to="/homework" className={activeMenu === 'homework' ? styles.focused:styles.link}>
-                    <MdMapsHomeWork className={styles.icon}></MdMapsHomeWork> 과제
+                    <MdMapsHomeWork className={styles.icon}></MdMapsHomeWork>
+                    <div className={styles.text}>과제</div>
                 </Link>
         </div>
     );
